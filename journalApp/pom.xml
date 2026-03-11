@@ -76,10 +76,15 @@
             <groupId>org.springframework.ai</groupId>
             <artifactId>spring-ai-starter-model-vertex-ai-gemini</artifactId>
         </dependency>
+
+
+
+
         <dependency>
             <groupId>org.springframework.ai</groupId>
-            <artifactId>spring-ai-starter-model-vertex-ai-embedding</artifactId>
+            <artifactId>spring-ai-starter-model-transformers</artifactId>
         </dependency>
+
     </dependencies>
 
     <build>
