@@ -150,7 +150,7 @@ public class FactCheckingService {
             List<Double> snippetEmbedding = toDoubleList(embeddingModel.embed(snippet));
             double score = calculateCosineSimilarity(claimEmbedding, snippetEmbedding);
 
-            System.out.println("Score " + String.format("%.3f", score) + " -> " + snippet.substring(0, Math.min(60, snippet.length())));
+            System.out.println("Score " + String.format("%.3f", score) + " -> " + snippet);
 
             if (score >= RELEVANCE_THRESHOLD) {
                 scored.add(new ScoredSnippet(snippet, url, score));
