@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Fact Checker (React)",
+    "version": "1.0",
+    "description": "Select text to verify news directly from your browser.",
+    "permissions": [
+        "contextMenus",
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Fact Checker"
+    }
+}
